@@ -7,7 +7,7 @@
 }
 
 html{
-    color: #e0e0f0;
+    color: #F2F1F7;
     background:#860972;
 }
 
@@ -38,6 +38,7 @@ h3{
 }
 
 #formulario{
+    background-color: #140D3B;
     margin-top: 120px;
     margin-left: 250px;
     display: flex;
@@ -45,9 +46,9 @@ h3{
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 2px solid #1a0236;
+    border: 2px solid #F2F1F7;
     width: 800px;
-    height: 450px;
+    height: 460px;
     padding: 0px;
     -webkit-border-radius: 10px;
     -moz-border-radius:10px;
@@ -66,18 +67,19 @@ label{
     padding-bottom: -20em;
     padding-top: 0.4em;
     font-weight: bold;
+    letter-spacing: 0.1em;
 }
 
 input{
     -webkit-border-radius: 10px;
     -moz-border-radius:10px;
     border-radius: 10px;
-    background-color: #ECCEF5;
-    border: 2px solid #1a0236;
+    background-color: #703370;
+    border: 2px solid #F2F1F7;
 }
 
 .conect{
-    font-size: 18px;
+    font-size: 15px;
     display: inline;
 }
 
@@ -85,15 +87,19 @@ input{
 
 .submit{
     font-weight: bold;
-    color: rgb(51, 3, 66);
-    border: 2px solid #1a0236;
+    color: rgb(255, 255, 255);
+    border: 2px solid #F2F1F7;
     cursor: pointer;
     padding: 10px;
-    background-color: #e7b8f5;
+    margin: 0 auto;
+    width: 07em;
+    height: 03em;
+    background-color: #703370;
+    letter-spacing: 0.1em;
 }
 
 .submit:hover{
-    color: #ECCEF5;
+    color: #F2F1F7;
     background-color: #1a0236;
 }
 
@@ -106,6 +112,6 @@ input{
 }
 
 hr{
-    border-color:rgb(51, 3, 66);
+    border-color:#F2F1F7;
 }
 
