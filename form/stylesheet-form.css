@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Libre+Bodoni&family=Playfair+Display&family=Raleway:wght@100&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 html{
@@ -24,6 +26,7 @@ header{
 
 h3{
     padding: 10px;
+    font-size: 25px;
 }
 
 .form{
@@ -42,15 +45,67 @@ h3{
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 2px solid white;
+    border: 2px solid #1a0236;
     width: 800px;
     height: 450px;
     padding: 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    border-radius: 10px;
 }
 
 .imagem{
     padding-bottom: 0px;
     display: flex;
     justify-content: flex-start;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+    padding-bottom: -20em;
+    padding-top: 0.4em;
+    font-weight: bold;
+}
+
+input{
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    border-radius: 10px;
+    background-color: #ECCEF5;
+    border: 2px solid #1a0236;
+}
+
+.conect{
+    font-size: 18px;
+    display: inline;
+}
+
+
+
+.submit{
+    font-weight: bold;
+    color: rgb(51, 3, 66);
+    border: 2px solid #1a0236;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e7b8f5;
+}
+
+.submit:hover{
+    color: #ECCEF5;
+    background-color: #1a0236;
+}
+
+#checkbox{
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+hr{
+    border-color:rgb(51, 3, 66);
 }
 
