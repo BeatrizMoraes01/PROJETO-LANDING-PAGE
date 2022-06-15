@@ -30,24 +30,26 @@ h3{
 }
 
 .form{
-    width: 250px;
+    width: 900px;
+    width: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
     padding: 40px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 #formulario{
+    width: 100%;
+    max-width: 800px;
     background-color: #140D3B;
     margin-top: 120px;
     margin-left: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     text-align: center;
-    align-items: center;
     border: 2px solid #F2F1F7;
-    width: 800px;
     height: 460px;
     padding: 0px;
     -webkit-border-radius: 10px;
@@ -60,24 +62,48 @@ h3{
     display: flex;
     justify-content: flex-start;
 }
+div.single-input{
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
 
 label{
     display: block;
-    cursor: pointer;
+    cursor: text;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
     padding-bottom: -20em;
     padding-top: 0.4em;
-    font-weight: bold;
     letter-spacing: 0.1em;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
 }
 
 input{
     -webkit-border-radius: 5px;
     -moz-border-radius:5px;
-    border-radius: 5px;
-    background-color: #703370;
-    border: 2px solid #F2F1F7;
+    border-radius: 3px;
+    border: 0;
+    background-color: #140D3B;
+    border-bottom: 2px solid #F2F1F7;
     color: #fff;
+    width: 100%;
     padding: 5px;
+    outline: 0;
+}
+
+div.single-input .input:focus,
+div.single-input .input:valid{
+    border-bottom: 2px solid #bb60f7;
+}
+
+div.single-input .input:focus~label,
+div.single-input .input:valid~label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #bb60f7;
 }
 
 input::placeholder{
