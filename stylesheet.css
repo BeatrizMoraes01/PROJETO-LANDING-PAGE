@@ -1,13 +1,22 @@
 
 body{
-    background-color: #860972;
+    background-color: #9e3a8e;
     font-size: 100%;
     margin: 10px;
-    color: white;
+    color: #F5EBF3;
+}
+
+.conteudo{
+    color: #ecd0d1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 0.4px #F5EBF3 solid;
+    justify-content: space-around;
 }
 /*LINK NAV*/
 a{
-    color: #fff;
+    color: #F5EBF3;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -27,7 +36,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #441c47;
+    background: rgba(53, 2, 54, 0.2);
     height: 10vh;
 }
 /*FORMATAÇÃO DA LISTA*/
@@ -53,32 +62,40 @@ nav{
 .mobile-menu{
     display: none;
 }
+
 /*RESPONSIVIDADE MOBILE*/
 @media (max-width: 999px) {
     body{
         overflow-x: hidden;
     }
     .nav-list{
-        position: absolute; /*ira se sobrepor a qualquer elemento*/
-        top: 8vh;
+        position: absolute;
+        top: 9vh;
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: rgba(53, 2, 54, 0.5);    
+        background: rgba(53, 2, 54, 0.5);
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
     }
     .nav-list li{
-        margin-left: o;
-        opacity: 0;
+        margin-left: 0;
+        /*opacity: 0; animação com js*/
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .conteudo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
     }
 
-    .mobile-menu{
-         display: block;
-    }
 }
+
 
 /*BARRA DE ROLAGEM*/
 ::-webkit-scrollbar{
@@ -92,20 +109,8 @@ nav{
     background-color: rgba(47, 36, 65, 0.5);
     border-radius: 10px;
 }
-
-
-.conteudo{
-    color: #ecd0d1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-top: 0.4px white solid;
-    border-bottom: 0.4px white solid;
-    justify-content: space-around;
-}
-
 .conteudo-escrito{
-    color: #ecd0d1;;
+    color: #F5EBF3;;
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -113,15 +118,18 @@ nav{
 }
 
 button{
+    box-sizing: border-box;
     border-radius: 8px;
-    background: #8b0968;
-    box-shadow: inset 14px 14px 50px #840963,
-            inset -14px -14px 50px #92096d;
+    background: #9e3a8e;
+    box-shadow: inset 14px 14px 50px #9e3a8e,
+            inset -14px -14px 50px #CE9CC6;
     
     font-size: 15px;
     padding: 5px;
     display: block;
     align-items: center;
+    border: 1px solid #F5EBF3;
+    
 }
 
 button:hover{
